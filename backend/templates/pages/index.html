@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h1>Dashboard</h1>
-    <p>
-        Welcome to the dashboard. This is a protected area. Only logged in users can access this page.
-    </p>
+    <h1>Tome 1</h1>
+    <p>Voici le contenu de la page 1</p>
+{% for tome in tomes %}
+    <h2>{{ tome.title }}</h2>
+
+{% endfor %}
 {% endblock %}

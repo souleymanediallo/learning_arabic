@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="container my-5 py-5">
+    <h1>Resultat</h1>
+    <h2 class="py-3">{{ message }}</h2>
+    <p>Vous avez {{ score }} bonnes réponses sur {{ total }}</p>
+    <a href="{% url 'quiz' %}" class="btn btn-primary">Question suivante</a>
+</section>
+{% endblock %}

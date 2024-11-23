@@ -1,6 +1,9 @@
 from django.shortcuts import render
+from learning.models import Tome
 
 
 # Create your views here.
 def home(request):
-    return render(request, 'pages/index.html')
+    tomes = Tome.objects.all()
+    context = {'tomes': tomes}
+    return render(request, 'pages/index.html', context)
