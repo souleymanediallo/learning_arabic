@@ -1,0 +1,40 @@
+# Ignorer les fichiers de l'environnement virtuel
+venv/
+env/
+
+backend/venv/
+backend/.env
+
+.env
+
+# Ignorer les fichiers générés par Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorer la base de données SQLite (si vous en utilisez une)
+backend/db.sqlite3
+db.sqlite3
+
+# Ignorer les fichiers de logs
+*.log
+
+# Ignorer les fichiers de migrations inutiles
+*.pyc
+*/migrations/*.py
+*/migrations/*.pyc
+
+# Ignorer les fichiers de configuration locaux
+.env
+
+# Ignorer les fichiers générés par des IDE (comme VSCode, PyCharm, etc.)
+.idea/
+.vscode/
+*.swp
+
+# Ignorer les fichiers générés par le système
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers node_modules (si vous utilisez un frontend)
+node_modules/
